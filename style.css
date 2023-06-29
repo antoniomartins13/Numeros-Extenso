@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #89a1fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80vw;
+    padding: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 3px 3px 5px 3px #00000024;
+    border-radius: 5px;
+    gap: 30px;
+}
+div h1{
+    font-size: 42px;
+    font-weight: 600;
+}
+
+input{
+    width: 30%;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: solid #89a1fb 2px;
+    text-align: center;
+}
+
+.btn-converter{
+    padding: 15px 30px;
+    background-color: #000;
+    font-size: 16;
+    font-weight: 800;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px #00000024;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-converter:hover{
+    scale: (1.10);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.btn-converter:active{
+    scale: 1.20;
+}
+
+#numero-extenso{
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: #00000024 3px 3px 5px 3px;
+    font-weight: 600;
+}
+
+@media (max-width: 769px) {
+    div h1{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 426px) {
+    div h1{
+        font-size: 18px;
+    }
+}
